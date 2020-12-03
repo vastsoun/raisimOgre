@@ -1374,3 +1374,5 @@ void OgreVis::setAmbientLight(Ogre::ColourValue rgba) {
 }
 
 } // namespace raisim
+
+std::unique_ptr<raisim::OgreVis> raisim::OgreVis::singletonPtr(nullptr);
