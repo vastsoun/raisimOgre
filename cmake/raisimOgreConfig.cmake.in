@@ -23,6 +23,7 @@ add_definitions(-DRAISIM_OGRE_RESOURCE_DIR=${RAISIM_OGRE_RESOURCE_DIR})
 
 get_target_property(raisimOgre_INCLUDE_DIRS raisim::raisimOgre INTERFACE_INCLUDE_DIRECTORIES)
 get_target_property(raisimOgre_LIBRARIES raisim::raisimOgre INTERFACE_LINK_LIBRARIES)
+list(APPEND raisimOgre_LIBRARIES raisim::raisimOgre)
 
 #==
 # Pacakge configuration check

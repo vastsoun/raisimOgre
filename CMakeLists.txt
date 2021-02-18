@@ -41,9 +41,9 @@ target_compile_options(${PROJECT_NAME} PRIVATE "$<$<CONFIG:RELEASE>:-g>")
 target_link_libraries(${PROJECT_NAME} PUBLIC OgreMain OgreBites OgreRTShaderSystem OgreMeshLodGenerator raisim::assimp raisim::raisim pthread zzip SDL2)
 target_include_directories(${PROJECT_NAME}
   PUBLIC
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-    $<BUILD_INTERFACE:${EIGEN3_INCLUDE_DIR}>
-    $<INSTALL_INTERFACE:include>
+    "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+    "$<BUILD_INTERFACE:${EIGEN3_INCLUDE_DIR}>"
+    "$<INSTALL_INTERFACE:include>"
 )
 target_compile_options(${PROJECT_NAME} PUBLIC -Wl,--no-as-needed) # workaround for gcc pthread link bug
 
