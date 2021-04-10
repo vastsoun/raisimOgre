@@ -829,7 +829,7 @@ void OgreVis::registerRaisimGraphicalObjects(raisim::VisObject &vo,
     auto visname = name + "_" + as->getBodyNames()[vo.localIdx] + "_" + getBaseFileName(vo.fileName);
     graphics.push_back(createSingleGraphicalObject(visname,
                                                    fullFilePath,
-                                                   "",
+                                                   vo.material,
                                                    vo.scale,
                                                    vo.offset,
                                                    vo.rot,
