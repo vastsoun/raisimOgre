@@ -26,7 +26,7 @@ get_target_property(raisimOgre_LIBRARIES raisim::raisimOgre INTERFACE_LINK_LIBRA
 list(APPEND raisimOgre_LIBRARIES raisim::raisimOgre)
 
 #==
-# Pacakge configuration check
+# Package configuration check
 #==
 
 find_package_handle_standard_args(raisimOgre

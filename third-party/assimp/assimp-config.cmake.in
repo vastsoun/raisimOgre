@@ -12,7 +12,7 @@ get_target_property(assimp_INCLUDE_DIRS assimp::assimp INTERFACE_INCLUDE_DIRECTO
 get_target_property(assimp_LIBRARIES assimp::assimp INTERFACE_LINK_LIBRARIES)
 
 #==
-# Pacakge configuration check
+# Package configuration check
 #==
 
 find_package_handle_standard_args(assimp
